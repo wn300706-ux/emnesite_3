@@ -1,0 +1,217 @@
+/*************** Reset *********************/
+
+/* Nulstiller margin og padding på alle elementer */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Billeder bliver responsive, samt fjerner kant */
+img {
+  height: auto;
+  display: block;
+  border: white 4px;
+}
+
+/* --- START PÅ FORSIDE --- */
+
+/* Layout af header: baggrund, centrering af logo & navigation */
+header {
+  background-color: black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-family: "Oswald";
+}
+
+/* Størrelse på billedet af logoet i headeren */
+header img {
+  width: 220px;
+  height: 90px;
+}
+
+/* Flytter navigationen til headerens højre side */
+header nav {
+  margin-left: auto;
+}
+
+/* Navigation bliver vandret med mellemrum mellem links */
+header nav ul {
+  display: flex;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+/* Styler links i navigationen */
+header nav a {
+  font-weight: 600;
+  color: white;
+  font-size: 24px;
+}
+
+/* Baggrundsfarven ændrer når man holder musen over */
+header nav a:hover {
+  background-color: lightgrey;
+}
+
+/* Holder CTA-knapperne i midten/centrum (de orange) */
+.cta-buttons {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+/* Styler CTA-knapper (de orange) */
+.cta-btn {
+  background-color: #ff6a00;
+  color: white;
+  border-radius: 10px;
+  margin: 0 20px;
+  display: inline-block;
+  font-weight: 600;
+  width: 200px;
+  height: 67px;
+  line-height: 67px;
+  font-size: 32px;
+}
+
+/* Baggrundsfarven på CTA-knapperne ændrer sig når man holder musen over */
+.cta-btn:hover {
+  background-color: lightgrey;
+}
+
+/* Navigation i topmenuen (sammen som "header-nav") */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding: 1rem;
+  justify-content: right;
+  background-color: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 800;
+}
+
+/* Hover til CTA-knap */
+.cta-button_hover {
+  background-color: white;
+  color: black;
+}
+
+/* Generelt links i navigationen */
+nav a {
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: block;
+  font-weight: bold;
+  color: white;
+  font-size: larger;
+}
+
+/* Giver luft i hovedindholdet */
+main {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Styler body herunder skrifttype, farver og generelt layout */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 0;
+  background-color: white;
+  color: black;
+}
+
+/* Layout til footer - fire kolonner via grid */
+footer {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 40px;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* Hover-effekt på links i footer */
+footer a:hover {
+  color: white;
+}
+
+/* Styler inputfeltet til email i nyhedsbrevet */
+footer input[type="email"] {
+  width: auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+/* Knap i footer (nyhedsbrev) */
+footer button {
+  background-color: #0078f6;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Hover-effekt på footer-knap */
+footer button:hover {
+  background-color: lightgrey;
+}
+
+/* Generel styling for alle links på forsiden */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Overskrift (forsidebanner) */
+h1 {
+  background-color: #0078f6;
+  color: white;
+  text-align: center;
+  padding: 40px 0px;
+  font-family: "Oswald", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 1rem;
+  text-align: left;
+  line-height: 1.3;
+  font-weight: 500;
+  text-align: left;
+  font-size: 36px;
+}
+
+h3 {
+  font-family: "Roboto";
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  font-family: "Roboto";
+}
+
+/* Giver luft mellem sektionerne på siden */
+section {
+  margin-bottom: 2rem;
+}
+
+/* --- SLUT PÅ FORSIDE --- */

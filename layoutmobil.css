@@ -1,0 +1,442 @@
+@media screen and (max-width: 800px) {
+  /* Overskrift centrering til den blå banner */
+  .shopnu h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 28px;
+  }
+
+  /* CTA knapper i en kolonne til mobilsite */
+  .ctabutton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 12px;
+    margin-right: 12px;
+    gap: 2rem;
+  }
+
+  /* Styler CTA knapper */
+  .cta-btn {
+    width: 90%;
+    height: 60px;
+    font-size: 22px;
+    margin-left: 1.5rem;
+  }
+
+  /* Overskrift til bestsellers */
+  .bestsellers h2 {
+    margin-left: 7.6rem;
+    font-size: 28px;
+    margin-top: 4rem;
+    font-family: "Oswald", sans-serif;
+  }
+
+  /* Grid til produkter til mobil i en kolonne */
+  .grid_1-1-1-forside {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0rem;
+  }
+
+  /* Produkter med max bredde */
+  .grid_1-1-1 article {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  /* Padding tilføjet til billederne af produkterne */
+  .grid_1-1-1-forside img {
+    border: none;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* Overskrift til produkt */
+  .grid_1-1-1-forside h3 {
+    font-size: 15px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+
+  /* Tekst til produkterne */
+  .grid_1-1-1-forside p {
+    font-size: 14px;
+    margin-left: 2rem;
+  }
+
+  /* Ekstra margin fra toppen til produkt 3 */
+  .Produkt-3 {
+    margin-top: 1.5rem;
+  }
+
+  /* Billede i grid og tekst i blokform */
+  .grid_1-2 {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  /* Padding indeni til blokken af teksten */
+  .grid_1-2 div {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  /* Img med skub fra margin top */
+  .grid_1-2 img {
+    width: 100%;
+    height: auto;
+    margin-top: 2.5rem;
+  }
+
+  /* Overskrift i den her grid herunder */
+  .grid_1-2 h2 {
+    font-size: 22px;
+    margin-top: 6px;
+  }
+
+  .grid_1-2 p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  /* Layout med flex osv */
+  .grid_1-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.5rem;
+    margin-bottom: 2rem;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .grid_1-2 div {
+    order: 1;
+  }
+
+  .grid_1-2 img {
+    order: 2;
+    width: 100%;
+    height: auto;
+    margin-top: -32px;
+  }
+
+  /* Layout (block - mobil) */
+  .grid_2-1 {
+    display: block;
+    margin-top: 4.5rem;
+    margin-bottom: 4rem;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  /* Img i grid */
+  .grid_2-1 .order img {
+    width: 100%;
+    height: auto;
+    margin-top: 2.5rem;
+  }
+
+  /* Overskrift til den her grid */
+  .grid_2-1 h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .grid_2-1 p {
+    font-size: 15px;
+    line-height: 2;
+  }
+}
+
+/* --- START PÅ DAME, HERRE & BØRN --- */
+
+@media screen and (max-width: 800px) {
+  /* Menulinks i farve og koncentration i centrum */
+  nav .menu a {
+    color: black;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  /* Knapper til filtering i række, samt i centrum */
+  .filtering {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0.2rem;
+  }
+
+  /* Obs det er grid med 2 kolonner til mobilsite og ikke desktop */
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 0rem;
+  }
+}
+
+/* Img til produkterne med max bredde */
+.grid_1-1-1 img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.grid_1-1-1 h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.grid_1-1-1 p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+/* Justering til produktet */
+.Produkt-6-dame {
+  margin-bottom: 0rem;
+}
+
+/* Justering til produktet */
+.Produkt-2 {
+  margin-bottom: -1.5rem;
+}
+
+.Produkt-4-børn {
+  margin-bottom: 0rem;
+}
+
+.Produkt-4 {
+  margin-top: 1.5rem;
+}
+
+/* Overskrift */
+h2 {
+  margin-left: 0rem;
+  margin-top: 0.3rem;
+}
+
+.info {
+  margin-left: -1.7rem;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: -0.3rem;
+}
+
+/* Knapper til filter med spacring og wrap */
+.filtering {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.filtering button {
+  border: 2px solid;
+  padding: 12px 16px;
+  font-size: 15px;
+  border-radius: 6px;
+}
+
+.filtering button:hover {
+  color: lightgrey;
+}
+
+/* --- SLUT PÅ DAME, HERRE & BØRN --- */
+
+/* --- OM OS --- */
+
+@media screen and (max-width: 800px) {
+  /* Layout i kolonneform */
+  .grid_1-1 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 32px;
+  }
+
+  /* Img i centrum, samt responsivt */
+  .grid_1-1 img {
+    max-width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+  }
+
+  /* Centrering af text-box */
+  .text-box {
+    text-align: center;
+    margin-top: -0.5rem;
+  }
+
+  .text-box h2 {
+    font-size: 18px;
+    margin-left: 7rem;
+  }
+
+  .text-box p {
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+
+/* --- SLUT OM OS --- */
+
+/* --- FOOTER --- */
+
+@media screen and (max-width: 800px) {
+  /* Mobilversion til footer i kolonneform med luft */
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Logo med stilling og rækkefølge order */
+  .logo-footer {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-footer img {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 4.3rem;
+  }
+  .logo-footer p {
+    margin-top: 3rem;
+  }
+
+  /* Nyhedsbrev sektion samt rækkefølge order */
+  .link-footer-3 {
+    order: 2;
+  }
+
+  .link-footer-3 h4 {
+    margin-bottom: 8px;
+  }
+
+  .link-footer-3 form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .link-footer-3 input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .link-footer-3 button {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .link-footer-3 button:hover {
+    color: lightgrey;
+  }
+
+  /* Links til hjælp (footer) */
+  .link-footer-2 {
+    order: 3;
+    text-align: left;
+    margin-left: -1rem;
+    margin-top: 0rem;
+  }
+
+  .link-footer-2 h4 {
+    margin-bottom: 8px;
+  }
+
+  .link-footer-2 ul {
+    padding: 0;
+  }
+
+  .link-footer-2 li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .link-footer-2 a:hover {
+    color: lightgrey;
+  }
+
+  /* Links til virksomhed (footer) */
+  .link-footer {
+    order: 4;
+    text-align: right;
+    margin-top: -13.8rem;
+    margin-left: 1rem;
+  }
+
+  .link-footer h4 {
+    margin-bottom: 8px;
+  }
+
+  .link-footer ul {
+    padding: 0;
+  }
+
+  .link-footer li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .link-footer a:hover {
+    color: lightgrey;
+  }
+
+  .footer-icons {
+    order: 5;
+    display: flex;
+    gap: 16px;
+    margin-left: 7rem;
+    margin-top: 16px;
+  }
+
+  .footer-icons img {
+    width: 35px;
+    height: 35px;
+  }
+}

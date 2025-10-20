@@ -1,0 +1,581 @@
+/* --- START PÅ MENU --- */
+
+/* Nulstiller margin og padding (gælder for alle elementer) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Baggrundsfarve til Shop nu */
+.shopnu {
+  background-color: #007cff;
+  width: 100%;
+}
+
+/* Sticky menu med baggrund & shadow */
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  box-shadow: 0 10px 10px rgb(255, 255, 255);
+}
+
+/* Størrelse på logo */
+.logo img {
+  width: 145px;
+  height: 45px;
+}
+
+/* Menu og navigation */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Menu uden punktform herunder vandret */
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Afstand til menupunkter */
+.menu li {
+  margin-right: 20px;
+}
+
+/* Uden margin til sidste menupunkt */
+.menu li:last-child {
+  margin-right: 0;
+}
+
+/* Links til menu herunder hover effekt & tekst (hvid) */
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: black;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Burgermenu (mobil) */
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+/* Burgermenu (linjer) */
+.burger {
+  display: none;
+}
+
+/* --- MENU TIL MOBIL --- */
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  /* Dropdown - menu */
+  nav.active .menu {
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+/* --- SLUT PÅ MENU --- */
+
+/* --- START PÅ FORSIDE --- */
+
+/* CTA knapper i centrum med luft imellem */
+.ctabutton {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.cta-btn {
+  text-align: center;
+}
+
+/* H2/overskrift med skub fra margin */
+h2 {
+  margin-left: 3rem;
+  margin-top: 7rem;
+}
+
+/* 3 kolonner til produkter, samt luft */
+.grid_1-1-1 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+/* Overskrifter til produkterne */
+.grid_1-1-1 h3 {
+  margin-top: 1rem;
+  font-size: 18px;
+}
+
+/* tTekst til produktet */
+.grid_1-1-1 p {
+  font-size: 16px;
+}
+
+/* Grid med et billede til venstre og tekst til højre */
+.grid_1-2 {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.grid_1-2 h2 {
+  margin-left: -1px;
+  margin-top: 16px;
+  font-size: 24px;
+}
+
+.grid_1-2 p {
+  margin-top: 6px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* Grid med en tekst til venstre og et billede til højre */
+.grid_2-1 {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.grid_2-1 h2 {
+  margin-left: -2px;
+  margin-top: 16px;
+  font-size: 24px;
+}
+
+.grid_2-1 p {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* 4 kolonner til footer, samt luft */
+.footer-bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 8rem;
+  padding: 4rem 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+  max-width: 1200px;
+}
+
+/* Logo til footer og tekst */
+.logo-footer img {
+  width: 177px;
+  margin-bottom: 16px;
+  margin-left: -23px;
+}
+
+/* Tekst til logo footer */
+.logo-footer p {
+  font-size: 16px;
+  line-height: 1.5;
+  width: 324px;
+}
+
+/* Links i footer og overskrifter */
+.link-footer,
+.link-footer-2,
+.link-footer-3 {
+  font-size: 16px;
+}
+
+.link-footer h4,
+.link-footer-2 h4,
+.link-footer-3 h4 {
+  font-size: 24px;
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+/* List med links uden punktform */
+.link-footer ul,
+.link-footer-2 ul {
+  list-style: none;
+  padding: 0;
+  width: 220px;
+  line-height: 1.5;
+}
+
+.link-footer li,
+.link-footer-2 li {
+  margin-bottom: 1rem;
+}
+
+.link-footer a,
+.link-footer-2 a {
+  text-decoration: none;
+}
+
+/* Nyhedsbrev */
+.link-footer-3 {
+  max-width: 330px;
+  width: 100%;
+}
+
+.link-footer-3 h4 {
+  margin-bottom: 1.5rem;
+}
+
+.link-footer-3 form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-footer-3 input {
+  width: 100%;
+  height: 55px;
+  padding: 12px;
+  margin-bottom: 8px;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.link-footer-3 button {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Ikoner (facebook &linkdln) i footer */
+.footer-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  align-items: center;
+  margin-left: -0.3rem;
+}
+
+.footer-icons a {
+  display: inline-block;
+}
+
+.footer-icons img {
+  width: 33px;
+  height: 33px;
+}
+
+.footer-icons img:hover {
+  color: lightgrey;
+}
+
+/* --- SLUT PÅ FORSIDE --- */
+
+/* --- START PÅ DAME --- */
+
+h2 {
+  margin-left: 1.7rem;
+}
+
+.info p {
+  border: solid black;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 1.8rem;
+}
+
+.filtering {
+  display: flex;
+  gap: 2rem;
+  justify-content: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1.8rem;
+}
+
+.filtering button {
+  background-color: black;
+  color: white;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.filtering button:hover {
+  background-color: lightgrey;
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.grid_1-1-1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid_1-1-1 h3 {
+  font-size: 18px;
+}
+
+.grid_1-1-1 p {
+  font-size: 16px;
+}
+
+/* --- SLUT PÅ DAME --- */
+
+/* --- START PÅ HERRE --- */
+
+h2 {
+  margin-left: 1.7rem;
+}
+
+.info p {
+  border: solid black;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 1.8rem;
+}
+
+.filtering {
+  display: flex;
+  gap: 2rem;
+  justify-content: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1.8rem;
+}
+
+.filtering button {
+  background-color: black;
+  color: white;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.filtering button:hover {
+  background-color: lightgrey;
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.grid_1-1-1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.Produkt-3 img {
+  height: 250px;
+}
+
+.grid_1-1-1 h3 {
+  font-size: 18px;
+}
+
+.grid_1-1-1 p {
+  font-size: 16px;
+}
+
+/* --- SLUT PÅ HERRE --- */
+
+/* --- START PÅ BØRN --- */
+
+h2 {
+  margin-left: 1.7rem;
+}
+
+.info p {
+  border: solid black;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 1.8rem;
+}
+
+.filtering {
+  display: flex;
+  gap: 2rem;
+  justify-content: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1.8rem;
+}
+
+.filtering button {
+  background-color: black;
+  color: white;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.filtering button:hover {
+  background-color: lightgrey;
+}
+
+.grid_1-1-1-forside {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 2.5rem;
+}
+
+.grid_1-1-1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid_1-1-1 h3 {
+  font-size: 18px;
+}
+
+.grid_1-1-1 p {
+  font-size: 16px;
+}
+
+/* --- SLUT PÅ BØRN --- */
+
+/* --- START PÅ OM OS --- */
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.grid_1-1 img {
+  width: 650px;
+  height: auto;
+  border-radius: 20px;
+  margin-left: -1.9rem;
+}
+
+.text-box h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  margin-left: -0rem;
+  margin-bottom: 0;
+}
+
+.text-box {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  margin-top: 5.5rem;
+}
+
+.text-box p {
+  font-size: 20px;
+  margin-top: 1rem;
+  line-height: 1.9;
+}
+
+/* --- SLUT PÅ OM OS --- */
